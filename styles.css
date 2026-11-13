@@ -1,0 +1,57 @@
+:root {
+  --bg: #f7f4ef;
+  --ink: #1c1a17;
+  --muted: #5c574f;
+  --line: #d9d3c8;
+  --card: #fffdf9;
+  --link: #1a4a73;
+}
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif SC", "Songti SC", "SimSun", "Georgia", serif;
+  line-height: 1.7;
+}
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+h1 { font-size: 1.8rem; font-weight: 600; margin: 0 0 0.4rem; }
+h2 { font-size: 1.1rem; font-weight: 600; margin: 2.2rem 0 0.8rem; border-bottom: 1px solid var(--line); padding-bottom: 0.3rem; }
+.lead, .meta, footer, .back { color: var(--muted); }
+.lead { margin: 0 0 2rem; }
+a { color: var(--link); text-decoration-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+.item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  margin: 0 0 0.75rem;
+}
+.item h3 { margin: 0 0 0.25rem; font-size: 1.05rem; font-weight: 600; }
+.item h3 a { color: var(--ink); text-decoration: none; }
+.item h3 a:hover { color: var(--link); text-decoration: underline; }
+.item p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+.tag {
+  display: inline-block;
+  font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+.back { display: inline-block; margin-bottom: 1.5rem; font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 0.9rem; }
+article p { margin: 0 0 1rem; }
+figure { margin: 1.2rem 0; }
+figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; display: block; }
+figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 0.4rem; }
+footer { margin-top: 3rem; font-size: 0.88rem; border-top: 1px solid var(--line); padding-top: 1rem; }
