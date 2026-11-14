@@ -55,3 +55,22 @@ figure { margin: 1.2rem 0; }
 figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 4px; display: block; }
 figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 0.4rem; }
 footer { margin-top: 3rem; font-size: 0.88rem; border-top: 1px solid var(--line); padding-top: 1rem; }
+
+article h2 { font-size: 1.1rem; font-weight: 600; margin: 1.8rem 0 0.7rem; border-bottom: 1px solid var(--line); padding-bottom: 0.3rem; }
+article ul { margin: 0 0 1rem; padding-left: 1.2rem; }
+article li { margin: 0 0 0.4rem; }
+.trial {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--ink);
+  padding: 0.85rem 1rem 0.95rem;
+  margin: 1.2rem 0 1.4rem;
+}
+.trial .label {
+  font-family: "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 0.45rem;
+}
+.trial p { margin: 0; }

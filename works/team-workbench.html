@@ -9,11 +9,27 @@
 <body>
   <main>
     <p class="back"><a href="../index.html">返回索引</a></p>
-    
+
     <h1>团队工作台</h1>
     <p class="meta">自己的作品，搭建在现成的 DeepSeek Harness 之上。</p>
-    <p>这是我在本机用现成的 DeepSeek Harness 提出并搭起来的多智能体工作台。本机有独立的启动器，用来拉起本地的 team-hub 页面；工作台只在本机运行，不是公开服务。</p>
-    <p>索引里写的是这套工作台本身，不把上游 Harness 说成我从零写的框架。</p>
+    <p>这是我在本机、用现成的 DeepSeek Harness 提出并搭起来的多智能体工作台。索引里写的是这套工作台本身，不把上游 Harness 说成我从零写的框架。</p>
+
+    <h2>我做了哪几块</h2>
+    <ul>
+      <li><strong>本机启动器</strong>：在本机一键拉起本地的 team-hub 页面。</li>
+      <li><strong>team-hub</strong>：本地的多智能体协作界面，包括首页和统一工作屏上的节点画布等。</li>
+      <li><strong>接本机模型</strong>：私信唤醒、快问，以及后续的任务执行，会优先走本机已安装的开放权重模型（Ollama，qwen3:8b）；本机模型暂时不可用时，再回到原来的宿主。接上后需要重启本机的 DeepSeek Harness 宿主才会生效。这一项没有改桌面贾维斯的源码。</li>
+    </ul>
+    <p>工作台只在本机运行，不必做成公开可登录的服务。下面的截图取自本机界面，不含密钥、登录态或他人对话。</p>
+
+    <figure>
+      <img src="../assets/workbench/home.jpg" alt="本机界面：团队工作台首页，标题为「一个工作台，几个专家」">
+      <figcaption>本机界面：团队工作台首页。工作台只在本机运行。</figcaption>
+    </figure>
+    <figure>
+      <img src="../assets/workbench/canvas.jpg" alt="本机界面：统一工作屏上的节点画布和成员分组">
+      <figcaption>本机界面：统一工作屏上的节点画布。</figcaption>
+    </figure>
 
     <footer>
       本站使用 GitHub Pages 免费发布，目前只有二级路径，没有自己的域名。
