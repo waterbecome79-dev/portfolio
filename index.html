@@ -4,36 +4,114 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>申浩贤的作品</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <main>
-    <h1>申浩贤的作品</h1>
-    <p class="lead">影视动画（三维方向），长沙。这是一页作品索引：每件作品有自己的页面和一句说明，并写清哪件是我自己做的，哪件是在开源项目上的定制。</p>
+  <header class="bar">
+    <nav class="tabs wrap" aria-label="分类">
+      <label class="tab">
+        <input type="radio" name="cat" value="all" checked>
+        全部
+      </label>
+      <label class="tab">
+        <input type="radio" name="cat" value="game">
+        游戏
+      </label>
+      <label class="tab">
+        <input type="radio" name="cat" value="app">
+        应用
+      </label>
+      <label class="tab">
+        <input type="radio" name="cat" value="site">
+        网站
+      </label>
+      <label class="tab">
+        <input type="radio" name="cat" value="api">
+        API
+      </label>
+    </nav>
+  </header>
 
-    <h2>自己的作品</h2>
-    <div class="item">
-      <h3><a href="works/team-workbench.html">团队工作台</a><span class="tag">自己的作品</span></h3>
-      <p>我在现成的 DeepSeek Harness 上提出并搭起来的本机多智能体工作台。</p>
-    </div>
-    <div class="item">
-      <h3><a href="works/cuojie.html">《错界》长篇初稿</a><span class="tag">自己的作品</span></h3>
-      <p>都市平行世界长篇，已写出第 1–30 章，尚未完稿。本页只作介绍，不上全文。</p>
-    </div>
-    <div class="item">
-      <h3><a href="works/huagu-liugen.html">花鼓·留根（剧本与镜单）</a><span class="tag">自己的作品</span></h3>
-      <p>当代长沙花鼓短片第一集的锁定剧本、镜单和设定预演；成片生成还停着。</p>
-    </div>
-    <div class="item">
-      <h3><a href="works/shanbi.html">闪避</a><span class="tag">自己的作品</span></h3>
-      <p>可以在浏览器里直接玩：左右躲开落下的障碍，分数是撑住的时间。</p>
-    </div>
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1 data-pane="all">申浩贤的作品</h1>
+        <p class="intro" data-pane="all">影视动画（三维方向），长沙。这是一页作品索引：每件作品有自己的页面和一句说明。</p>
 
-    <h2>开源项目上的定制</h2>
-    <div class="item">
-      <h3><a href="works/jarvis-custom.html">贾维斯定制</a><span class="tag">开源项目上的定制</span></h3>
-      <p>底座是开源 GDDXX-Jarvis；定制部分包括本机 HTTP API、托盘，以及和团队工作台的对接。</p>
-    </div>
+        <h1 data-pane="game">游戏</h1>
+        <p class="intro" data-pane="game">可以在浏览器里直接玩：左右躲开落下的障碍，分数是撑住的时间。</p>
+
+        <h1 data-pane="app">应用</h1>
+        <p class="intro" data-pane="app">我在现成的 DeepSeek Harness 上提出并搭起来的本机多智能体工作台。</p>
+
+        <h1 data-pane="site">网站</h1>
+        <h1 data-pane="api">API</h1>
+      </div>
+      <img
+        class="hero-visual"
+        src="assets/huagu/05_stage_monitor.jpg"
+        width="1280"
+        height="720"
+        alt="概念设定：阿花在村台开口，监视器里是冷蓝的面部">
+    </section>
+
+    <a class="article" href="works/huagu-liugen.html">
+      <img src="assets/huagu/01_threshold.jpg" width="1280" height="720" alt="概念设定：阿花站在茶馆到练功室的门口，看手机亮屏">
+      <span>
+        <h2>花鼓·留根（剧本与镜单）</h2>
+        <p>当代长沙花鼓短片第一集的锁定剧本、镜单和设定预演；成片生成还停着。</p>
+      </span>
+      <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true">
+        <path d="M4 12 L12 4 M6.5 4 H12 V9.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+    <section class="catalog" aria-label="作品">
+      <p class="empty empty-site">这一类还没有作品。</p>
+      <p class="empty empty-api">这一类还没有作品。</p>
+
+      <div class="grid">
+        <a class="work" href="works/team-workbench.html" data-cat="app">
+          <img class="work-media top" src="assets/workbench/home.jpg" width="1050" height="836" alt="本机界面：团队工作台首页，标题为「一个工作台，几个专家」">
+          <span class="work-body">
+            <h2>团队工作台 <span class="tag">自己的作品</span></h2>
+            <p>我在现成的 DeepSeek Harness 上提出并搭起来的本机多智能体工作台。</p>
+          </span>
+        </a>
+
+        <a class="work" href="works/cuojie.html">
+          <span class="work-fallback" aria-hidden="true"><span>错界</span></span>
+          <span class="work-body">
+            <h2>《错界》长篇初稿 <span class="tag">自己的作品</span></h2>
+            <p>都市平行世界长篇，已写出第 1–30 章，尚未完稿。本页只作介绍，不上全文。</p>
+          </span>
+        </a>
+
+        <a class="work" href="works/huagu-liugen.html">
+          <img class="work-media" src="assets/huagu/01_threshold.jpg" width="1280" height="720" alt="概念设定：阿花站在茶馆到练功室的门口，看手机亮屏">
+          <span class="work-body">
+            <h2>花鼓·留根（剧本与镜单） <span class="tag">自己的作品</span></h2>
+            <p>当代长沙花鼓短片第一集的锁定剧本、镜单和设定预演；成片生成还停着。</p>
+          </span>
+        </a>
+
+        <a class="work" href="works/shanbi.html" data-cat="game">
+          <span class="work-fallback" aria-hidden="true"><span>闪避</span></span>
+          <span class="work-body">
+            <h2>闪避 <span class="tag">自己的作品</span></h2>
+            <p>可以在浏览器里直接玩：左右躲开落下的障碍，分数是撑住的时间。</p>
+          </span>
+        </a>
+
+        <a class="work" href="works/jarvis-custom.html" data-cat="app">
+          <img class="work-media" src="assets/jarvis/hud.png" width="2559" height="1599" alt="本机界面：定制版贾维斯的完整界面" loading="lazy">
+          <span class="work-body">
+            <h2>贾维斯定制 <span class="tag">开源项目上的定制</span></h2>
+            <p>底座是开源 GDDXX-Jarvis；定制部分包括本机 HTTP API、托盘，以及和团队工作台的对接。</p>
+          </span>
+        </a>
+      </div>
+    </section>
 
     <footer>
       本站使用 GitHub Pages 免费发布，目前只有二级路径，没有自己的域名。
